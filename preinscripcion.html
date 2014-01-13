@@ -13,18 +13,32 @@
   <link rel="stylesheet" href="assets/css/styles.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/libs/modernizr-2.5.2.min.js"></script>
-
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/jquery-1.9.1.min.js"><\/script>')</script>
   <script src="assets/js/toggle.js" type="text/javascript"></script>
-  <script src="assets/js/popitup.js" type="text/javascript"></script>
-
+  <script src="assets/js/resposive_modal.js" type="text/javascript"></script>
+  <script>window.jQuery || document.write('<script src="assets/jquery-1.9.1.min.js"><\/script>')</script>
 </head>
 <!--[if lt IE 7]> <body class="ie6 oldies"> <![endif]-->
 <!--[if IE 7]>    <body class="ie7 oldies"> <![endif]-->
 <!--[if IE 8]>    <body class="ie8 oldies"> <![endif]-->
 <!--[if gt IE 8]><!--><body><!--<![endif]-->
 <!--[if lte IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div id="modal_window">
+        <div id="modal_heading"><h2>Términos y Política de Privacidad</h2></div>
+        <div id="modal_content">
+            <p>De acuerdo con lo establecido por la Ley Orgánica 15/1999, le informamos que los datos obtenidos de este formulario serán incorporados a un fichero bajo la responsabilidad de
+					   E-marketing 2.0 S.L., con la finalidad de poder atender sus consultas y/o sugerencias y para atender los compromisos derivados de larelación que podamos mantener con Usted. 
+					   Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición mediante un escrito a nuestra dirección sita en: [Direccion] – [Poblacion] ([Provincia)].
+					   Mientras no nos comunique lo contrario, entenderemos que sus datos no han sido modificados, que usted se compromete a notificarnos cualquier variación y que tenemos su consentimiento para utilizarlos para las finalidades mencionadas.</p>
+					<p>Asimismo, en virtud de lo que dispone el artículo 21 de la Ley 34/2002 de servicios de la sociedad de la información y de comercio electrónico, solicitamos su consentimiento para poder enviarle la información 
+					   relacionada con nuestros productos o servicios que consideremos que puede ser de su interés, ya sea por correo postal o electrónico.</p>
+					<p>El interesado declara tener conocimiento del destino y uso de los datos personales recogidos mediante la lectura de la presente cláusula. El envío de este formulario implica la aceptación de la cláusula.</p>
+        </div>
+        <div id="modal_footer">
+            <center><button class="button green" href="#modal_window">OK</button></center>
+        </div>
+  </div>
   <header class="clearfix">
       <div class="container">
         <a id="logo" href="index.html">SEPADE</a>
@@ -123,15 +137,8 @@
 					</form>
 					</br>
 					<input type="checkbox" checked value="1" onclick="$('#inputEnviar').toggleDisabled();" />
-					<a href=data-bpopup='{"follow":[false,false],"position":[150,400]}'>Acepto los términos y la política de privacidad.</a>					
-					<p>De acuerdo con lo establecido por la Ley Orgánica 15/1999, le informamos que los datos obtenidos de este formulario serán incorporados a un fichero bajo la responsabilidad de
-					   E-marketing 2.0 S.L., con la finalidad de poder atender sus consultas y/o sugerencias y para atender los compromisos derivados de larelación que podamos mantener con Usted. 
-					   Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición mediante un escrito a nuestra dirección sita en: [Direccion] – [Poblacion] ([Provincia)].
-					   Mientras no nos comunique lo contrario, entenderemos que sus datos no han sido modificados, que usted se compromete a notificarnos cualquier variación y que tenemos su consentimiento para utilizarlos para las finalidades mencionadas.</p>
-					<p>Asimismo, en virtud de lo que dispone el artículo 21 de la Ley 34/2002 de servicios de la sociedad de la información y de comercio electrónico, solicitamos su consentimiento para poder enviarle la información 
-					   relacionada con nuestros productos o servicios que consideremos que puede ser de su interés, ya sea por correo postal o electrónico.</p>
-					<p>El interesado declara tener conocimiento del destino y uso de los datos personales recogidos mediante la lectura de la presente cláusula. El envío de este formulario implica la aceptación de la cláusula.</p>
-                </li>
+					<a href="#modal_window">Acepto los términos y la política de privacidad.</a>					
+				</li>
             </ul>
         </article>
    </section>
@@ -141,8 +148,6 @@
         <a href="index.html">HOME</a> | <a href="profesores.html">PRODESORADO</a> | <a href="empresa.html">EMPRESA</a> |  <a href="http://www.javieratienza.com" target="_blank">BLOG</a> | <a href="contacto.html">CONTACTO</a>
       </p>
   </footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="assets/js/script.min.js"></script>
 </body>
 </html>
